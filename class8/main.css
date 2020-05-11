@@ -1,0 +1,19 @@
+#list{
+    margin-bottom: 50px;
+     border:1px solid grey;
+ }
+ #tbody tr td {
+     border: 1px solid black;
+    
+ }
+ #tbody{
+     width:200px;
+     height: 200px;
+ }
+ td.color{
+     background-color: green;
+ }
+ .selected{
+     background-color: tomato;
+     
+ }

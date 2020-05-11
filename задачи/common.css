@@ -1,0 +1,110 @@
+
+*{margin:0;
+    padding: 0;
+    box-sizing: border-box;}
+
+
+    
+
+    .modal {
+        width: 480px;
+        height: 246px;
+        padding: 24px;
+        border: none;
+        opacity: 0;
+        animation: modal-show 0.5s 1 forwards;
+      }
+      
+      .modal::backdrop {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      
+      .button {
+        -webkit-appearance: none;
+        border: none;
+        background-color: #8bb02c;
+        color: white;
+        padding: 12px;
+        font-size: 18px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+      
+      .modal-hide {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 60px;
+        height: 60px;
+        -webkit-appearance: none;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        font-size: 48px;
+      }
+      
+      .message {
+        width: 420px;
+        height: 160px;
+        margin-bottom: 24px;
+      }
+      
+      @keyframes modal-show {
+          0% { opacity: 0; }
+          100% { opacity: 1; }
+      }
+    .chips{
+        padding: 10px;
+        margin: 15px;
+        background-color: red;
+        color: black;
+    }
+    #chips-field{
+        position: fixed;
+        right: 20px;
+        top: 0;
+        bottom: 0;
+        width: 20%;
+        background: yellow;
+        z-index: 999;
+    }
+    body {
+      min-height: 100vh;
+  }
+  
+  .menu-box {
+      display: inline-block;
+      background-color: rgb(163, 219, 108);
+  }
+  
+  .context-menu {
+      background-color: rgb(236, 231, 231);
+      border: 1px solid rgb(167, 166, 166);
+      padding: 5px;
+      width: 100px;
+      color: rgb(94, 93, 93);
+      list-style: none;
+      text-align: left;
+      position: absolute;
+      /* position: fixed; */
+      display: none;
+  }
+  
+  .context-menu.active {
+      display: block;
+  }
+  
+  .context-menu li {
+      padding: 5px;
+      border-bottom: 1px solid rgb(175, 174, 174);
+      font-size: 15px;
+  }
+  
+  .context-menu li:last-child {
+      border-bottom: none;
+  }
+  
+  .context-menu li:hover {
+      background-color: rgb(90, 86, 86);
+      color: rgb(251, 251, 251);
+      border: 0.5px solid rgb(167, 166, 166);
+  }

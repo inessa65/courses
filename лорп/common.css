@@ -1,0 +1,27 @@
+#container{
+    min-height: 100vh;
+    background-color: teal;display: flex;
+    flex-direction: row;
+    
+}
+#one{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    top:250px;
+    left:400px;
+    position: absolute;
+    
+}
+.tabsWrap{
+    display: flex;
+   
+}
+.tab{
+    margin-left: 20px; 
+  
+}
+.active{
+   display: block;
+}
+    

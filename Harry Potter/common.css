@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#wrap{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+/*#book1, #book2, #book3{
+border: 1px solid black;
+width: 200px;
+height: 40px;
+}*/
+#list{
+    visibility: visible;
+    
+}
+#text {
+    visibility: hidden;
+   
+}
+#text__book2{
+    visibility: hidden;
+}
+#text__book3{
+    visibility: hidden;
+}
+img{
+    width: 360px;
+    cursor: pointer;
+}
+#box{
+    display: flex;
+    /* margin-right: 49px; */
+    justify-content: space-between;
+    width: 960px;
+
+}
+#type{
+    border: 1px solid black;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/js/script.js" defer></script>
+</head>
+
+<body>
+    <!--<h1 id="result">ответ: </h1>
+  <script>
+      let a= 3;
+      let b= 4;
+      let c= Math.max(a,b);
+
+  document.getElementById("result").innerHTML =c;
+
+  </script>
+<div id="hs"></div>
+
+  <script>
+const house={
+    height:130,
+    adress:"minsk",
+    s: 45
+}
+ const container = document.getElementById("hs");
+ container.innerHTML = `
+ <h2>${house.height}</h2>
+ <p>${house.adress}</p>
+    <p>${house.s}</p>`;
+ 
+
+  </script>-->
+
+<div id="building">
+
+</div>
+
+<script>
+    const arr=[];
+    for(let i=0; i<3;i++){
+        const house={
+            height:130,
+            adress:"minsk",
+            s: 45
+        } 
+        arr.push(house);
+    }
+    for(let i=0; i<arr.length; i++){
+        const elem =document.getElementById("building");
+        //elem.innerHTML+=`<div class="building1"> <h2>Высота:${arr[i].height}`;
+            elem.insertAdjacentHTML('afterend',`<div class="building1"> 
+                <h2>Высота:${arr[i].height}\n<h3>Площадь:${arr[i].s}`);
+    }
+const paragraphs =document.getElementsByClassName('building1');
+Array.from(paragraphs).forEach((p,i)=>{
+    p.setAttribute(`title`, `${arr[i].height}`);
+}
+);
+
+const list =document.getElementsById('building1');
+setInterval(()=>{
+    
+    const last = list.lastElementChild;
+    list.prepend(last);
+},300);
+
+
+
+</script>
+
+<!--<ul id="list"></ul>
+<script>
+const N =+prompt('');
+const list =document.getbyId('list');
+
+for(let i=o; i<N; i++){
+    const li=document.createElement('li');
+    li.innerText=`number`;
+    const b=document.createElement('b');
+    b.innerText =(i+1);
+    li.appendChild(b);
+    list.appendChild(li);
+}
+
+    <table id="list"></table>
+    <script>
+        const N = +prompt("")
+        const list = document.getElementById("list");
+
+        for (let i = 0; i < N; i++) {
+            const tr = document.createElement('tr');
+            list.appendChild(tr);
+            for (let j = 0; j < N; j++) {
+                const td = document.createElement('td');
+                tr.appendChild(td);
+                td.innerText = Math.round(Math.random() * 100);
+              
+            }
+
+
+        }
+    </script>-->
+
+</body>
+
+</html>
