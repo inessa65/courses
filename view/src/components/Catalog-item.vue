@@ -21,7 +21,7 @@
       <p v-for="ingredient in item.ingredients" :key="ingredient.id">Total Kcal:{{ingredient.
         kcal}} <br><span>Fat:{{ingredient.fat}}</span> <br><span>Protein:{{ingredient.protein}} </span></p>
         <p> </p>
-           <!--  <p></p> -->
+          
                
                    
     </div>
