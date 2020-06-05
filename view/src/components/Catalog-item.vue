@@ -15,7 +15,7 @@
         <img :src="require( '../assets/images/'+ item.image)" alt="img" />
         <p>description:{{item.description}}</p>
         <p>Preparing: {{item.prepering}}</p>
-
+ 
       <div>
         <h5>ingredients</h5>
       <p v-for="ingredient in item.ingredients" :key="ingredient.id">Total Kcal:{{ingredient.
